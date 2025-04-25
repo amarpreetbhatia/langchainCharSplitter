@@ -1,6 +1,8 @@
 # langchainCharSplitter
 simple example to run the text splitter from Document using langchain
 
+![Example workflow](image.png)
+
 ## Steps
 
 1. **Split Text with LangChain**  
