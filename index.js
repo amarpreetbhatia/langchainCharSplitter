@@ -1,4 +1,4 @@
-import { CharacterTextSplitter } from "langchain/text_splitter";
+import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 
 // LangChain text splitter
 async function splitDocument() {
@@ -6,8 +6,10 @@ async function splitDocument() {
   const text = await response.text();
   console.log(text);
 
-    const splitter = new CharacterTextSplitter({
-    separator: " ",
+  // Split the text into chunks
+  // optimize  for the smaller sizes without losing context
+    const splitter = new RecursiveCharacterTextSplitter({
+
     chunkSize: 150,
     chunkOverlap: 15,
   });
