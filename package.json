@@ -1,0 +1,21 @@
+{
+  "name": "langchaincharsplitter",
+  "version": "1.0.0",
+  "description": "simple example to run the text splitter from Document using langchain",
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "langchain": "^0.3.24"
+  }
+}
